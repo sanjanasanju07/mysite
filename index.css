@@ -1,0 +1,148 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b, #0ea5e9);
+      background-size: 200% 200%;
+      animation: bgmove 10s infinite alternate ease-in-out;
+      color: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @keyframes bgmove {
+      from { background-position: left top; }
+      to { background-position: right bottom; }
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      color: #38bdf8;
+      letter-spacing: 1px;
+      text-shadow: 0 0 10px #38bdf8aa;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      width: 220px;
+      text-align: center;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px #38bdf866;
+    }
+
+    button {
+      background: #38bdf8;
+      color: #0f172a;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 12px #38bdf866;
+    }
+
+    button:hover {
+      background: pink;
+      box-shadow: 0 0 20px #38bdf8aa;
+      transform: translateY(-10px);
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #f1f5f9;
+      min-height: 2rem;
+    }
+
+    .progress-container {
+      margin-top: 2rem;
+      width: 80%;
+      max-width: 400px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #38bdf855;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+      border-radius: 10px;
+      transition: width 1s ease-in-out;
+    }
+
+    #progressText {
+      margin-top: 0.8rem;
+      font-size: 0.95rem;
+      color: #94a3b8;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+     body {
+      cursor: none; /* Hide default cursor */
+    }
+    #cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #38bdf8;
+      pointer-events: none; /* So it doesn’t block clicks */
+      transform: translate(-50%, -50%);
+      transition: background-color 0.2s, transform 0.1s;
+      z-index: 9999;
+    }
+      button:hover, a:hover {
+      cursor: none;
+     
+    }
+     .bottom-tag {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+  ;
+
+    color: lightcoral;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    z-index: 9999;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+  }
+
+  .bottom-tag:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  }
+
+  .bottom-tag span {
+    font-weight: 700;
+  }
